@@ -41,17 +41,17 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="https://mrsunny.top.index.html">MrSunny<span>.top</span></a></h1>
+      <!-- <h1 class="logo"><a href="https://mrsunny.top">MrSunny<span>.top</span></a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+      <a href="https://mrsunny.top" class="logo"><img src="./assets/img/logo_top.png" alt=""></a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">顶部</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Top</a></li>
           <li><a class="nav-link scrollto" href="#about">关于</a></li>
           <li><a class="nav-link scrollto" href="#services">服务</a></li>
           <li><a class="nav-link scrollto" href="#contact">联系</a></li>
-          <li><a class="nav-link scrollto" href="https://mrsunny.top">访问网站</a></li>
+          <li><a class="nav-link scrollto" href="https://mrsunny.top">>访问网站</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -66,7 +66,7 @@
       <h2> / 很 / 高 / 兴 / 认 / 识 / 你 / ！</h2>
       <p>关于https://mrsunny.top网站的介绍</p>
       <div class="d-flex">
-        <a href="https://mrsunny.top" class="btn-get-started scrollto">前去 访问网站</a>
+        <a href="https://mrsunny.top" class="btn-get-started scrollto">前往主页</a>
         <a href="https://mrsunny.top/assets/video/%E7%BD%91%E7%AB%99%E5%AE%A3%E4%BC%A0_21-12-09_720p-60fps-%E4%BD%8E%E7%A0%81%E7%8E%87.mp4" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>观看视频</span></a>
       </div>
       
@@ -111,7 +111,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="https://mrsunny.top/index.html">访问网站</a></h4>
+              <h4 class="title"><a href="https://mrsunny.top/index.html">点击访问</a></h4>
               <p class="description">点击链接即可直接访问https://MrSunny.top</p>
             </div>
           </div>
@@ -167,7 +167,7 @@
                 <!-- <i class="bx bx-world"></i> -->
                 <div>
                   <h5>https://MrSunny.top</h5>
-                  <p>新版域名，阿里云购买的顶级域名，字符串短，方便记忆，支持万维网主机名DNS解析，需及时续费</p>
+                  <p>新版域名，阿里云购买的一级域名，字符串短，方便记忆，支持万维网主机名DNS解析，需及时续费</p>
                 </div>
               </li>
             </ul>
@@ -794,7 +794,7 @@
           <h2>Contact</h2>
           <h3><span>联系方式</span></h3>
           <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
-          <p style="color: red;font-weight: 50;">*该功能仍处于开发阶段，暂时无法使用，敬请期待</p>
+          <!-- <p style="color: red;">*该功能仍处于开发阶段，暂时无法使用，敬请期待</p> -->
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -802,7 +802,7 @@
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
               <h3>我的坐标</h3>
-              <p>中华人民共和国，江苏东台，台南，董贤村五组</p>
+              <p>中华人民共和国，江苏-东台</p>
             </div>
           </div>
 
@@ -825,7 +825,7 @@
         </div>
 
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <!-- <div class="row" data-aos="fade-up" data-aos-delay="100">
 
           <div class="col-lg-6 ">
             <iframe class="mb-4 mb-lg-0" scrolling="no" src="https://cn.bing.com/maps/embed?h=384&w=800&cp=32.852574929152205~120.49161747831455&lvl=11&typ=d&sty=r&src=SHELL&FORM=MBEDV8" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
@@ -857,7 +857,7 @@
           </div>
 
         </div>
-
+ -->
       </div>
 
     </section><!-- End Contact Section -->
@@ -934,7 +934,14 @@
 
     <div class="container py-4">
       <div class="copyright">
-       Copyright &copy; 2021-2022   <a href="https://mrsunny.top" style="color: black;"><strong><span>MrSunny.top</span></strong></a>. 保留所有权利
+       Copyright &copy; 2021<span id="show_time"><script>  
+        setInterval("fun(show_time)",1);
+        function fun(timeID){ 
+        var date = new Date();
+        var y = date.getFullYear();
+        document.getElementById(timeID.id).innerHTML = "-"+ y;
+          }
+        </script></span>    <a href="https://mrsunny.top" style="color: black;"><strong><span>MrSunny.top</span></strong></a>. 保留所有权利
       </div>
       <div class="credits">
          网页设计由<a href="https://bootstrapmade.com/">BootstrapMade</a>提供。
